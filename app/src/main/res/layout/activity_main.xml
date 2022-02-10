@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/wifiserchingpng"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/searchinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifiserchingpng"
+            android:layout_centerHorizontal="true"
+            android:text="Click on the above icon to Start Searching For Chat"
+            android:textColor="#7C7979" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReceiver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="File Transfer" />
+
+            <Button
+                android:id="@+id/btnCheckPermission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="Check permissions"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="Send Image"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

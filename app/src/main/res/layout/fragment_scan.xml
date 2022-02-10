@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:paddingBottom="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/send"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circular_view_blue"
+                android:gravity="center"
+                android:text="Send"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:paddingTop="26dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/receive"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circular_view_red"
+                android:gravity="center"
+                android:text="Receive"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/wifiserchingpng"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/searchinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifiserchingpng"
+            android:layout_centerHorizontal="true"
+            android:text="Click on the above icon to Start Searching"
+            android:textColor="#7C7979" />
+
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/wifiScanGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wifisearchinggif" />
+
+
+    </RelativeLayout>
+</LinearLayout>

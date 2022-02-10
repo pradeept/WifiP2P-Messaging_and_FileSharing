@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/peersstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4B878BFF"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Peers"
+        android:textColor="#AE2557"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/peerListView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/peersstatus"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/recdmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peerListView"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Message..."
+        android:textColor="#5184B1"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/msginput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recdmsg"
+        android:hint="Enter the Message"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/msgSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msginput"
+        android:text="Send"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
